@@ -8,14 +8,14 @@
         <a-scene>
             
     <a-sky
-        color="lightgreen"
+        color="lightblue"
     ></a-sky>
             
     <a-torus 
-        position="-2 4 -5"
+        position="-2 3 -5"
         color="green" 
-        arc="270" 
-        radius="1" 
+        arc="180" 
+        radius="2" 
         radius-tubular="0.2"
     ></a-torus>
     
@@ -24,10 +24,13 @@ Hmm, you need a couple more attributes to make the cone work.
 Have a look at the documentation, it has some good hints.
 https://aframe.io/docs/1.1.0/primitives/a-cone.html
 -->
-    <a-cone 
+    <a-cylinder 
         position="2 4 -5"
         color="red"
-    ></a-cone>
+        arc="45"
+        radius="2"
+        radius-tublar="0.2"
+    ></a-cylinder>
 
 <!--
 Hmm. What 3D shape has four sides? 
